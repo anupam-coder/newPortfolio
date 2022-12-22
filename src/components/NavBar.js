@@ -100,7 +100,12 @@ export const NavBar = () => {
                 className={
                   activeLink === "resume" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("resume")}
+                onClick={() =>
+                  window.open(
+                    "https://github.com/anupam-coder/newPortfolio/blob/main/src/assets/files/ap.pdf",
+                    "_blank"
+                  )
+                }
               >
                 <button id="DownloadResume">Download Resume</button>
               </Nav.Link>
