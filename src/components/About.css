@@ -7,7 +7,9 @@
 
 .about-main-left {
   border: 10px solid rgb(21, 11, 2);
+  border-radius: 60px;
   padding: 12px;
+  border-style: dotted;
 }
 
 .about-main-left,
