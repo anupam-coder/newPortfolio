@@ -65,8 +65,6 @@ export const Banner = () => {
       className="banner"
       style={{
         backgroundImage: "url(" + backgroundH + ")",
-        // backgroundSize: "cover",
-        height: "110vh",
       }}
       id="home"
     >

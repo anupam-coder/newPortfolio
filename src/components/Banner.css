@@ -4,7 +4,21 @@
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  height: "110vh";
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    height: "10vh";
+    padding: 100px 0 250px 0;
+  }
+
+  .banner .head_img {
+    width: 50%;
+    float: right;
+    margin-top: -40%;
+  }
 }
 .banner .tagline {
   font-weight: 700;
