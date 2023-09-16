@@ -95,6 +95,16 @@ export const NavBar = () => {
                 My Projects
               </Nav.Link>
               <Nav.Link
+                href="#blogs"
+                className={
+                  activeLink === "blogs" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("blogs")}
+              >
+                My Blogs
+              </Nav.Link>
+
+              <Nav.Link
                 href={MyResume}
                 download="AnupamPatra_UI_Dev_4_YOE"
                 className={

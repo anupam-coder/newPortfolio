@@ -11,6 +11,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/experience/experience";
 import { ParticlesBackground } from "./ParticlesBackground";
+import Blogs from "./components/Blogs/Blogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
+      <Blogs />
       <Footer />
     </div>
   );

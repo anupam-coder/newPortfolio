@@ -1,0 +1,21 @@
+#blogs {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg")
+        no-repeat center; */
+  background: url("https://img.freepik.com/premium-photo/design-space-mockup-digital-tablet_53876-44779.jpg?w=996");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#blogs .header-component p {
+  color: rgb(0, 0, 0) !important;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 44px;
+  align-self: center;
+  justify-content: center;
+}

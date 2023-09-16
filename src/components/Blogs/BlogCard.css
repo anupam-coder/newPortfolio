@@ -1,0 +1,63 @@
+/* BlogCard.css */
+.blog-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.blog-details-container {
+  flex: 1;
+  padding: 16px;
+}
+
+.blog-image-container {
+  /* Set a fixed size for the container */
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  background-image: url(""); /* Set a default background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.blog-description {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.read-more-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect */
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
