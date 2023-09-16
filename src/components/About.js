@@ -23,7 +23,7 @@ export const About = () => {
           {/* Sub section 1 */}
           <h3 className="about-sub-head">Who I am</h3>
           <p className="about-details">
-            I am a web developer with 4+ years of experience having expertise in
+            I am a web developer with 5+ years of experience having expertise in
             frontend and exposure to backend. I can design & develop web apps
             using the latest technologies to deliver the product with quality
             code. I am very good at UI fundamentals & technologies and can adapt

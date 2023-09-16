@@ -1,35 +1,43 @@
 export const skillList = [
   {
     skillName: "HTML",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/html.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/html.png",
   },
   {
     skillName: "CSS",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/css.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/css.png",
   },
   {
     skillName: "JavaScript",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/js.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/js.png",
   },
   {
     skillName: "React",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/react.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/react.png",
   },
   {
     skillName: "Redux",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/redux.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/redux.png",
   },
   {
     skillName: "NodeJS",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/node.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/node.png",
   },
   {
     skillName: "TypeScript",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/ts.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/ts.png",
   },
   {
     skillName: "Java",
-    skillUrl: "https://madhavbahl.tech/portfolio-assets/java.png",
+    skillUrl:
+      "https://raw.githubusercontent.com/anupam-coder/newPortfolio/main/src/assets/img/skills/java.png",
   },
   {
     skillName: "Cypress",

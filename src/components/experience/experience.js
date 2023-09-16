@@ -3,6 +3,7 @@ import experienceStyles from "./experience.styles";
 import { ReactComponent as CompanyIcon } from "../../assets/company/company.svg";
 import FractalLogo from "../../assets/company/wipro-logo.png";
 import accentureLogo from "../../assets/company/accenture-logo.png";
+import opentextLogo from "../../assets/company/ot_logo.png";
 import Header from "../Header/Header";
 
 const Experience = () => {
@@ -19,16 +20,37 @@ const Experience = () => {
           className={`${classes.expBlockSeperator} ${classes.expBlockSeperatorFirst}`}
         >
           <span className={classes.presentDayTag}>Present Day</span>
-          <span className={`hide-md ${classes.expYearTagLeft}`}>Sept 2021</span>
+          <span className={`hide-md ${classes.expYearTagLeft}`}>June 2023</span>
           {/* <span className={`hide-sm ${classes.expYearTagRight}`}>Feb 2019</span> */}
         </span>
         <div className={classes.expBlockRight}>
           <div className="exp-block-content">
             <div className={classes.companyLogo}>
-              <img src={accentureLogo} alt="Fractal-Logo"></img>
+              <img src={opentextLogo} alt="OpenText-logo"></img>
+            </div>
+            <div className={classes.companyName}>OpenText</div>
+            <div className={classes.role}>Senior Software Engineer</div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.expBlock}>
+        <div className={classes.expBlockLeft}>
+          <div className="exp-block-content hide-md">
+            <div className={classes.companyLogo}>
+              <img src={accentureLogo} alt="Accenture-logo"></img>
             </div>
             <div className={classes.companyName}>Accenture</div>
-            <div className={classes.role}>Frontend Engineer</div>
+            <div className={classes.role}>
+              Application Development Senior Analyst
+            </div>
+          </div>
+        </div>
+        <span className={classes.expBlockSeperator}>
+          <span className={classes.expYearTagRight}>Sept 2021</span>
+        </span>
+        <div className={classes.expBlockRight}>
+          <div className="exp-block-content hide-sm">
+            <div className={classes.companyLogo}></div>
           </div>
         </div>
       </div>
