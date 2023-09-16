@@ -9,6 +9,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "./Banner.css";
 import { ParticlesBackground } from "../ParticlesBackground";
+import TypewriterComponent from "typewriter-effect";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -80,8 +81,22 @@ export const Banner = () => {
                 >
                   {/* <span className="tagline">{date}</span> */}
                   <h1>{`Hello World! I'm Anupam Patra ⚡`} </h1>
-                  <h4>
+                  {/* <h4>
                     & I'm a Front end developer.<span id="typing"></span>
+                  </h4> */}
+                  <h4>
+                    <TypewriterComponent
+                      options={{
+                        strings: [
+                          "& I'm a Front end developer😊",
+                          "Part time Quiz Master!😄",
+                          "& I love to write blogs",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        delay: 30,
+                      }}
+                    />
                   </h4>
                   <br></br>
                   <img
