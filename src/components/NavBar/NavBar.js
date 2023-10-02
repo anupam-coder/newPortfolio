@@ -1,14 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/twitter.svg";
-import navIcon2 from "../assets/img/github.svg";
-import navIcon4 from "../assets/img/linkedin.svg";
+import logo from "../../assets/img/logo.svg";
+import navIcon1 from "../../assets/img/twitter.svg";
+import navIcon2 from "../../assets/img/github.svg";
+import navIcon4 from "../../assets/img/linkedin.svg";
 import { HashLink } from "react-router-hash-link";
-import MyResume from "../assets/files/ap.pdf";
-
-import headerImg from "../assets/img/header-img.svg";
+import MyResume from "../../assets/files/ap.pdf";
+import "./NavBar.css";
+import headerImg from "../../assets/img/header-img.svg";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {

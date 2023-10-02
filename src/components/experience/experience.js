@@ -15,7 +15,7 @@ const Experience = () => {
     >
       <Header heading="Professional Experience" details="" />
       <div className={classes.expBlock}>
-        <div className={classes.expBlockLeft}></div>
+        <div className={classes.expBlockRight}></div>
         <span
           className={`${classes.expBlockSeperator} ${classes.expBlockSeperatorFirst}`}
         >
@@ -34,7 +34,7 @@ const Experience = () => {
         </div>
       </div>
       <div className={classes.expBlock}>
-        <div className={classes.expBlockLeft}>
+        <div className={classes.expBlockRight}>
           <div className="exp-block-content hide-md">
             <div className={classes.companyLogo}>
               <img src={accentureLogo} alt="Accenture-logo"></img>
@@ -55,7 +55,7 @@ const Experience = () => {
         </div>
       </div>
       <div className={classes.expBlock}>
-        <div className={classes.expBlockLeft}>
+        <div className={classes.expBlockRight}>
           <div className="exp-block-content hide-md">
             <div className={classes.companyLogo}>
               <img src={FractalLogo} alt="Fractal-Logo"></img>

@@ -9,8 +9,8 @@ import backgroundH from "../../assets/img/planet_mountains.jpg";
 
 const Skills = () => {
   return (
-    <div
-      className="section-container"
+    <section
+      className="section-container-skills"
       style={{
         backgroundImage: "url(" + backgroundH + ")",
         // backgroundSize: "cover",
@@ -31,7 +31,7 @@ const Skills = () => {
       <div className="skills-vector-frame">
         <img className="skills-vector" src={skillsVector} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -7,7 +7,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div id="projects" className="section-container">
+    <section id="projects" className="section-container-projects">
       <Header
         className="header-component"
         heading="My Projects."
@@ -34,7 +34,7 @@ const Projects = () => {
                 link='my skills!'
                 toAddress='/skills'
             /> */}
-    </div>
+    </section>
   );
 };
 
