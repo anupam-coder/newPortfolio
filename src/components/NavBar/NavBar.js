@@ -106,7 +106,7 @@ export const NavBar = () => {
 
               <Nav.Link
                 href={MyResume}
-                download="AnupamPatra_UI_Dev_4_YOE"
+                download="AnupamPatra_UI_Dev_5+_YOE"
                 className={
                   activeLink === "resume" ? "active navbar-link" : "navbar-link"
                 }
