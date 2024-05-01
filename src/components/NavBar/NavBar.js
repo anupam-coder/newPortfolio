@@ -5,6 +5,7 @@ import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/twitter.svg";
 import navIcon2 from "../../assets/img/github.svg";
 import navIcon4 from "../../assets/img/linkedin.svg";
+import navIcon5 from "../../assets/img/icons8-instagram.svg";
 import { HashLink } from "react-router-hash-link";
 import MyResume from "../../assets/files/ap.pdf";
 import "./NavBar.css";
@@ -133,6 +134,12 @@ export const NavBar = () => {
                   target="_blank"
                 >
                   <img src={navIcon4} alt="LinkedIn" />
+                </a>
+                <a
+                  href="https://www.instagram.com/code_alchemy_wizard/"
+                  target="_blank"
+                >
+                  <img src={navIcon5} alt="Instagram" />
                 </a>
               </div>
             </span>

@@ -72,3 +72,34 @@
     width: 90%;
   }
 }
+
+@keyframes blink-color {
+  0% {
+    color: #007bff;
+  }
+  50% {
+    color: #ff0000;
+  } /* Change to the color you prefer */
+  100% {
+    color: #007bff;
+  }
+}
+@keyframes glowing {
+  0% {
+    background-color: #600020;
+    box-shadow: 0 0 3px #600020;
+  }
+  50% {
+    background-color: #e86005;
+    box-shadow: 0 0 10px #e86005;
+  }
+  100% {
+    background-color: #600020;
+    box-shadow: 0 0 3px #600020;
+  }
+}
+
+.about-details a {
+  color: antiquewhite;
+  animation: blink-color 1300ms infinite; /* Apply the blink-color animation */
+}

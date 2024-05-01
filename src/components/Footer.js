@@ -6,6 +6,7 @@ import navIcon1 from "../assets/img/discord.svg";
 import navIcon2 from "../assets/img/github.svg";
 import navIcon3 from "../assets/img/twitter.svg";
 import navIcon4 from "../assets/img/linkedin.svg";
+import navIcon5 from "../assets/img/icons8-instagram.svg";
 import developerImg from "../assets/img/developer-01-whoooa.gif";
 import "animate.css";
 import Wave from "react-wavify";
@@ -30,6 +31,12 @@ export const Footer = () => {
               target="_blank"
             >
               <img src={navIcon4} alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.instagram.com/code_alchemy_wizard/"
+              target="_blank"
+            >
+              <img src={navIcon5} alt="Instagram" />
             </a>
             <br />
             <div id="footer_text">
