@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/newPortfolio/static/css/main.c3ee2d1c.css",
-    "main.js": "/newPortfolio/static/js/main.e69b3213.js",
+    "main.js": "/newPortfolio/static/js/main.61c61a7b.js",
     "static/js/787.fb771931.chunk.js": "/newPortfolio/static/js/787.fb771931.chunk.js",
     "static/media/about_anime.gif": "/newPortfolio/static/media/about_anime.986764c2696118dcbe90.gif",
     "static/media/animation_300_lbksoxeq.gif": "/newPortfolio/static/media/animation_300_lbksoxeq.edee3ca5d8b765857504.gif",
@@ -21,7 +21,7 @@
     "static/media/CentraNo2-Bold.ttf": "/newPortfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/newPortfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/newPortfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/ap.pdf": "/newPortfolio/static/media/ap.93e76f071a35efa6d88d.pdf",
+    "static/media/ap.pdf": "/newPortfolio/static/media/ap.c1b29e1c2167721c579e.pdf",
     "static/media/accenture-logo.png": "/newPortfolio/static/media/accenture-logo.6b9e1c6a44615d6ec815.png",
     "static/media/logo.svg": "/newPortfolio/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
     "static/media/discord.svg": "/newPortfolio/static/media/discord.6c0ca1aa5bb623843bcc94ad2abd543c.svg",
@@ -32,11 +32,11 @@
     "static/media/twitter.svg": "/newPortfolio/static/media/twitter.1170ec5150de467c091d2b544c028172.svg",
     "static/media/linkedin.svg": "/newPortfolio/static/media/linkedin.601a08b5febfbd1a7a33e809a8ce82af.svg",
     "main.c3ee2d1c.css.map": "/newPortfolio/static/css/main.c3ee2d1c.css.map",
-    "main.e69b3213.js.map": "/newPortfolio/static/js/main.e69b3213.js.map",
+    "main.61c61a7b.js.map": "/newPortfolio/static/js/main.61c61a7b.js.map",
     "787.fb771931.chunk.js.map": "/newPortfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3ee2d1c.css",
-    "static/js/main.e69b3213.js"
+    "static/js/main.61c61a7b.js"
   ]
 }
