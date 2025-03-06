@@ -1,195 +1,104 @@
-.experience-container {
-  margin-top: 3rem;
-  padding: 0 2rem 5rem 2rem;
-}
-
-@media screen and (max-width: 769px) {
-  .experience-container {
-    padding: 0 1.5rem 4.5rem 1.5rem;
-  }
-}
-
-.exp-block {
-  height: 15rem;
+/* Timeline Container */
+.timeline-container {
   display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background: #0e172c;
+  color: white;
 }
 
-.exp-block-left {
-  flex: 1;
-  height: 100%;
-  text-align: right;
-}
-
-.exp-block-left .exp-block-content {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding: 0 3rem 1rem 0;
-}
-
-@media screen and (max-width: 769px) {
-  .exp-block-left {
-    display: none;
-  }
-}
-
-.exp-block-right {
-  flex: 1;
-  height: 100%;
-}
-
-.exp-block-right .exp-block-content {
-  flex: 1;
-  height: 100%;
-  width: 300px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding: 0 0 1rem 3rem;
-}
-
-.exp-block-right .block-left {
-  padding: 0 0 1rem 15rem;
-  width: 380px;
-  margin-left: 10rem;
-}
-
-.exp-block-right .exp-block-content.hide-sm {
-  padding: 0 0 2rem 3rem;
-}
-
-.exp-block-separator {
-  height: 100%;
-  width: 0.5rem;
-  background: rgba(15, 22, 48, 0.6);
+/* Timeline */
+.timeline {
   position: relative;
-  border-radius: 1rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.exp-block-separator:before {
-  content: "";
+/* Vertical Line */
+.timeline .timeline-line {
   position: absolute;
-  bottom: -1.1rem;
-  left: 50%;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 1.4rem;
-  display: block;
-  background: #0d132e;
-  transform: translate(-50%);
-}
-
-.exp-block-separator-first:after {
-  content: "";
-  position: absolute;
-  top: -0.2rem;
-  left: 50%;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 1.4rem;
-  display: block;
-  background: #0d132e;
-  transform: translate(-50%);
-}
-
-.exp-year-tag-right,
-.exp-year-tag-left,
-.present-day-tag {
-  background: #0d132e;
-  color: #ffffff;
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.2rem;
-  position: absolute;
-  white-space: nowrap;
-}
-
-.exp-year-tag-right:before,
-.exp-year-tag-left:before,
-.present-day-tag:before {
-  content: "";
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid transparent;
-  border-right: 7px solid #0d132e;
-  width: 0;
-  height: 0;
+  width: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
   bottom: 0;
-  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline .timeline-item {
+  position: relative;
+  width: 50%;
+  margin: 40px 0;
+}
+
+/* Left Side */
+.timeline .timeline-item.left {
+  align-self: flex-start;
+  text-align: right;
+  padding-right: 60px;
+}
+
+/* Right Side */
+.timeline .timeline-item.right {
+  align-self: flex-end;
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* Timeline Dots */
+.timeline .timeline-item::before {
+  content: "";
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  left: 100%;
+  width: 14px;
+  height: 14px;
+  background: #ff4081;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.8);
 }
 
-.exp-year-tag-right {
-  left: 2rem;
-  bottom: -1.2rem;
+.timeline .timeline-item.right::before {
+  left: 0%;
 }
 
-.exp-year-tag-right:before {
-  left: -14px;
+/* Timeline Content */
+.timeline .timeline-content {
+  background: #1e2a47;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.exp-year-tag-left {
-  right: 2rem;
-  bottom: -1.2rem;
+/* Date Label */
+.timeline .date {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff4081;
 }
 
-.exp-year-tag-left:before {
-  right: -14px;
-}
-
-.present-day-tag {
-  top: -0.5rem;
-  left: 2rem;
-}
-
-.present-day-tag:before {
-  left: -14px;
-}
-
-.company-logo img {
-  height: 3rem;
-}
-
-.company-logo svg {
-  height: 4rem;
-  fill: #474c56;
-}
-
-@media screen and (max-width: 580px) {
-  .company-logo img {
-    height: 2rem;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline {
+    width: 90%;
   }
-  .company-logo svg {
-    height: 3rem;
-    fill: #474c56;
+
+  .timeline .timeline-item {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
-}
 
-.company-name {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #0d132e;
-}
-
-@media screen and (max-width: 580px) {
-  .company-name {
-    font-size: 1.7rem;
+  .timeline .timeline-item::before {
+    left: 50%;
   }
-}
 
-.role {
-  font-size: 1.3rem;
-  font-weight: 500;
-  font-style: italic;
-}
-
-@media screen and (max-width: 580px) {
-  .role {
-    font-size: 1.1rem;
+  .timeline .timeline-line {
+    left: 50%;
   }
 }

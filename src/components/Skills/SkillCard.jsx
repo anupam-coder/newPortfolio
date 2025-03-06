@@ -4,7 +4,9 @@ import "./Skills.css";
 const SkillCard = ({ skillName, skillUrl }) => {
   return (
     <div className="skill">
-      <img src={skillUrl} alt="skill" />
+      <div className="skill-icon">
+        <img src={skillUrl} alt={skillName} />
+      </div>
       <p>{skillName}</p>
     </div>
   );

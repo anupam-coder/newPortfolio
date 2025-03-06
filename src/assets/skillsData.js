@@ -48,4 +48,18 @@ export const skillList = [
     skillUrl:
       "https://ih1.redbubble.net/image.267642084.7827/st,small,507x507-pad,600x600,f8f8f8.u1.jpg",
   },
+  {
+    skillName: "PostgreSQL",
+    skillUrl:
+      "https://w7.pngwing.com/pngs/448/730/png-transparent-postgresql-plain-logo-icon.png",
+  },
+  {
+    skillName: "Github",
+    skillUrl: "https://avatars1.githubusercontent.com/u/9919?v=4",
+  },
+  {
+    skillName: "Github",
+    skillUrl:
+      "https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_400x400.png",
+  },
 ];
