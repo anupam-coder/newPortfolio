@@ -58,8 +58,13 @@ export const skillList = [
     skillUrl: "https://avatars1.githubusercontent.com/u/9919?v=4",
   },
   {
-    skillName: "Github",
+    skillName: "MongoDB",
     skillUrl:
       "https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_400x400.png",
+  },
+  {
+    skillName: "Webpack",
+    skillUrl:
+      "https://miro.medium.com/v2/resize:fit:800/1*nhakXc4nb7IDA0wh5Kx2Kg.jpeg",
   },
 ];

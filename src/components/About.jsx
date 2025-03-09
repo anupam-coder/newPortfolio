@@ -21,8 +21,8 @@ export const About = () => {
           {/* Sub section 1 */}
           <h3 className="about-sub-head">Who I Am</h3>
           <p className="about-details">
-            With over six years of experience in web development, I specialize
-            in frontend technologies and have exposure to backend development.
+            With over 7 years of experience in web development, I specialize in
+            frontend technologies and have exposure to backend development.
             Proficient in designing and developing web applications using the
             latest technologies, I prioritize quality code. I excel in UI
             fundamentals and can quickly adapt to various frontend frameworks.

@@ -1,5 +1,6 @@
 import React from "react";
 import "./experience.css";
+import Header from "../Header/Header";
 
 const experiences = [
   {
@@ -24,20 +25,23 @@ const experiences = [
 
 const Timeline = () => {
   return (
-    <div className="timeline-container">
-      <div className="timeline">
-        <div className="timeline-line"></div>
-        {experiences.map((exp, index) => (
-          <div key={index} className={`timeline-item ${exp.side}`}>
-            <div className="timeline-content">
-              <h2>{exp.company}</h2>
-              <p>{exp.role}</p>
-              <span className="date">{exp.date}</span>
+    <section className="section-container-experience" id="Experience">
+      <Header heading="My Experience" details="" />
+      <div className="timeline-container">
+        <div className="timeline">
+          <div className="timeline-line"></div>
+          {experiences.map((exp, index) => (
+            <div key={index} className={`timeline-item ${exp.side}`}>
+              <div className="timeline-content">
+                <h2>{exp.company}</h2>
+                <p>{exp.role}</p>
+                <span className="date">{exp.date}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
