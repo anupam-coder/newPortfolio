@@ -25,7 +25,7 @@ const experiences = [
 
 const Timeline = () => {
   return (
-    <section className="section-container-experience" id="Experience">
+    <section className="section-container-experience" id="experience">
       <Header heading="My Experience" details="" />
       <div className="timeline-container">
         <div className="timeline">
