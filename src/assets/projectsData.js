@@ -31,4 +31,12 @@ export const projectsData = [
       "https://private-user-images.githubusercontent.com/71912675/423035144-1d6791be-0a85-43a6-8d7c-3e9b2775bdd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxMDIwODQsIm5iZiI6MTc0MjEwMTc4NCwicGF0aCI6Ii83MTkxMjY3NS80MjMwMzUxNDQtMWQ2NzkxYmUtMGE4NS00M2E2LThkN2MtM2U5YjI3NzViZGQwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE2VDA1MDk0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWViYTYxNjE0MGNlNDAwNGViNmMzYzgxZjIyNThkZDY2Mjk1OTZiMjM0YmRhNjBkYTFmMzRjMzhiZjI2ZTE2NmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wKEKVo0nD16QLTns9MKCuGKp0s06Eu8jUgK_5sBpf7g",
     projectUrl: "https://klimate-weather-app-six.vercel.app/",
   },
+  {
+    projectName: "Book My Show",
+    projectDescription:
+      "Developed a Book My Show web application using the MERN stack. Key features include allowing partners to add theaters, admins to manage movie listings, and other functionalities to enhance user experience.",
+    imageUrl:
+      "https://private-user-images.githubusercontent.com/71912675/423218093-a562206b-efc2-4c44-bb4a-8db850759a40.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxMzI0MDcsIm5iZiI6MTc0MjEzMjEwNywicGF0aCI6Ii83MTkxMjY3NS80MjMyMTgwOTMtYTU2MjIwNmItZWZjMi00YzQ0LWJiNGEtOGRiODUwNzU5YTQwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE2VDEzMzUwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI0NzdlYTgwYWMzYTdlZmM3Y2YxOWZlODdhMDc0YzMyYjhkNmE0NTc0YTIxNWQ3NGQ3ZTE0NzgyOGQzNTBmZTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.b7gPJPwkVJDM8gEJcL8W5WGrosOtL86xvLxFEbQsdvk",
+    projectUrl: "https://bookmyshow-u020.onrender.com/",
+  },
 ];
