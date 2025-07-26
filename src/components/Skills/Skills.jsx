@@ -6,33 +6,34 @@ import SkillCard from "./SkillCard";
 import { skillList } from "../../assets/skillsData";
 import backgroundH from "../../assets/img/planet_mountains.jpg";
 
-const Skills = () => {
-  return (
-    <section
-      className="section-container-skills"
-      style={{
-        backgroundImage: `url(${backgroundH})`,
-        height: "100vh",
-      }}
-      id="skills"
-    >
-      <div className="overlay"></div>{" "}
-      {/* Dark overlay to enhance text readability */}
-      <Header
-        heading="My Skills"
-        details="Passionate about new technologies, I keep exploring stuff. Here's the tech stack I've worked with!"
+const Skills = () => (
+  <section
+    className="section-container-skills"
+    id="skills"
+    style={{ backgroundImage: `url(${backgroundH})` }}
+  >
+    <div className="overlay" />
+    <Header
+      heading="Skills"
+      details="Here are some tools & technologies I excel at:"
+    />
+    <div className="skill-card-container">
+      {skillList.map((skill) => (
+        <SkillCard
+          key={skill.skillName}
+          skillName={skill.skillName}
+          skillUrl={skill.skillUrl}
+        />
+      ))}
+    </div>
+    <div className="skills-vector-frame">
+      <img
+        src={skillsVector}
+        alt="Skills illustration"
+        className="skills-vector"
       />
-      <div className="skill-card-container">
-        {skillList.map((skill) => (
-          <SkillCard
-            key={skill.skillName}
-            skillName={skill.skillName}
-            skillUrl={skill.skillUrl}
-          />
-        ))}
-      </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Skills;

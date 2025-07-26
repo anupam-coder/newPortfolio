@@ -1,0 +1,237 @@
+.section-container.about-section {
+  position: relative;
+  padding: 2.5rem 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Animated blurred color blobs background */
+.about-bg-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-bg-blobs::before,
+.about-bg-blobs::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.39;
+  animation: aboutBlobMove 15s ease-in-out infinite alternate;
+}
+
+.about-bg-blobs::before {
+  width: 520px;
+  height: 440px;
+  background: #6a11cb;
+  left: -100px;
+  top: 26%;
+  animation-delay: 0s;
+}
+
+.about-bg-blobs::after {
+  width: 620px;
+  height: 480px;
+  background: #2575fc;
+  right: -100px;
+  top: 55%;
+  animation-delay: 9s;
+}
+
+@keyframes aboutBlobMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.33;
+  }
+  50% {
+    transform: translate(48px, -24px) scale(1.15);
+    opacity: 0.51;
+  }
+  100% {
+    transform: translate(0, 18px) scale(1);
+    opacity: 0.33;
+  }
+}
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 7vw;
+  position: relative;
+  z-index: 1;
+}
+
+.about-main-left,
+.about-main-right {
+  width: 50%;
+  min-width: 318px;
+}
+
+/* Left column — About details */
+.about-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+/* Glass morphism for card */
+.glassy-effect {
+  background: rgba(40, 54, 124, 0.22);
+  border-radius: 18px;
+  border: 1.5px solid rgba(233, 238, 255, 0.13);
+  box-shadow: 0 8px 42px 0 rgba(97, 188, 255, 0.13);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  padding: 2.5rem 2.6rem 2.2rem 2.6rem;
+  margin-top: 2.2rem;
+  min-width: 350px;
+  color: #28354d; /* Darker text for better readability */
+}
+
+/* Headings and text styling with improved contrast */
+.about-head {
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+  color: #23294a;
+}
+
+.about-name-pop {
+  color: #2e47c7; /* fallback color */
+  background: linear-gradient(95deg, #6a11cb 65%, #2575fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-sub-head {
+  margin: 0 0 14px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #376ef7;
+  letter-spacing: 0.03em;
+}
+
+.about-details {
+  margin: 16px 0 16px 0;
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #31436c;
+  line-height: 1.7;
+}
+
+/* Bullets for listing */
+.about-bullet {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #57ddeb;
+  margin-right: 0.3em;
+}
+
+/* Link styling */
+.about-link-element a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.23s;
+}
+
+.about-link-element a:hover {
+  color: #ffd94a;
+  text-shadow: 0 0 12px #70c6ff50;
+}
+
+/* Quick facts */
+.about-facts {
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #234;
+  display: flex;
+  gap: 1.65rem;
+  font-size: 1.07rem;
+  opacity: 1; /* full opacity for legibility */
+  flex-wrap: wrap;
+}
+
+/* Interests highlight */
+.about-extra-interests {
+  margin-top: 0.7rem;
+  color: #344054;
+  font-size: 1.03rem;
+}
+
+.about-avatar-frame {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.about-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 2.5px solid #a9d7ff;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 6px 24px 0 #c1e9ff87;
+}
+
+.about-main-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-vector {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 120px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1000px) {
+  .about-main {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 6vw;
+  }
+  .about-main-left,
+  .about-main-right {
+    width: 100%;
+    min-width: 0;
+  }
+  .about-vector {
+    margin-top: 28px;
+    max-height: 320px;
+    min-width: 90px;
+  }
+  .glassy-effect {
+    margin-top: 0;
+    padding: 2rem 1rem 2rem 1.2rem;
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-main {
+    padding: 0 0.8rem;
+  }
+  .glassy-effect {
+    padding: 1.2rem 0.2rem 1.7rem 0.7rem;
+  }
+  .about-head {
+    font-size: 2rem;
+  }
+}

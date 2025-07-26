@@ -1,21 +1,86 @@
-#blogs {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg")
-        no-repeat center; */
-  background: url("https://img.freepik.com/premium-photo/design-space-mockup-digital-tablet_53876-44779.jpg?w=996");
+/* Section container */
+.section-container-blogs {
+  padding: 6rem 2rem;
+  background: url("https://img.freepik.com/premium-photo/design-space-mockup-digital-tablet_53876-44779.jpg?w=996")
+    no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: #f0f0f0;
 }
 
-#blogs .header-component p {
-  color: rgb(0, 0, 0) !important;
+/* Header text adjustment */
+.section-container-blogs .header-component p {
+  color: #000;
 }
 
-.project-cards-container {
+/* Grid layout for blogs */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Blog Card Styles */
+.blog-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 44px;
-  align-self: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Background image section inside card (optional if kept inline) */
+.blog-card .blog-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Content inside the card */
+.blog-details-container {
+  padding: 1.5rem 1.25rem 0 1.25rem;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.blog-description {
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+  flex-grow: 1;
+}
+
+.read-more-link {
+  margin: 1.5rem 1.25rem;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.read-more-link:hover {
+  background: linear-gradient(135deg, #5c0ebc, #1e60e5);
+  transform: translateY(-2px);
 }

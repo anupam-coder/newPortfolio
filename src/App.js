@@ -6,12 +6,12 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Banner } from "./components/Banner";
 import { Team } from "./components/Team";
 import { Footer } from "./components/Footer";
-import { About } from "./components/About";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/experience/experience";
 import { ParticlesBackground } from "./ParticlesBackground";
 import Blogs from "./components/Blogs/Blogs";
+import About from "./components/About/About";
 
 function App() {
   return (

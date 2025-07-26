@@ -1,92 +1,317 @@
-#projects {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg")
-      no-repeat center; */
-  background: url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
-  background-attachment: fixed;
+/* ----------------- Projects Section Container ----------------- */
+.section-container-projects {
+  height: 60rem;
+  position: relative;
+  background: linear-gradient(135deg, #1a1c2c 0%, #23283f 100%);
+  overflow: hidden;
+  box-shadow: inset 0 0 80px rgb(48 126 235 / 0.3);
+
+  /* Ensure content is above background blobs */
+  z-index: 0;
 }
+
+/* Blurred colorful blobs floating in the background */
+.section-container-projects::before,
+.section-container-projects::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.45;
+  animation: blobMove 15s ease-in-out infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-container-projects::before {
+  width: 480px;
+  height: 480px;
+  background: #6a11cb; /* purple blob */
+  top: 25%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.section-container-projects::after {
+  width: 520px;
+  height: 520px;
+  background: #2575fc; /* blue blob */
+  top: 55%;
+  right: 10%;
+  animation-delay: 7.5s;
+}
+
+/* Animation for slow floating blobs */
+@keyframes blobMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.1);
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate(0, 10px) scale(1);
+    opacity: 0.4;
+  }
+}
+
+/* Optional subtle twinkling particle overlay */
+/* Add a div with class `particles-overlay` inside the .section-container-projects to use this */
+.section-container-projects .particles-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url("/public/patterns/particles-small.svg") repeat;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+/* ----------------- Project Cards Container ----------------- */
 .project-cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 44px;
-  align-self: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 45rem;
+  overflow: hidden;
+  z-index: 2; /* Above blobs */
+  margin: 0 auto;
 }
 
-.header-component p {
-  color: white !important;
-}
-
+/* ----------------- Individual Project Card ----------------- */
 .project-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
   width: 500px;
-  min-height: 550px;
-  background: #ffffff;
+  min-width: 300px;
+  min-height: 500px;
+  background: #fff;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-
-  margin: 20px;
+  z-index: 1;
+  user-select: none;
 }
 
-.project-card:hover {
-  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s;
+/* Active (center) card */
+.project-card.active {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.4);
 }
 
+/* Left-side card */
+.project-card.prev {
+  transform: translate(-155%, -50%) scale(0.9);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Right-side card */
+.project-card.next {
+  transform: translate(55%, -50%) scale(0.9);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* ----------------- Responsive Layout for Cards ----------------- */
+@media only screen and (max-width: 1000px) {
+  .project-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .project-card,
+  .project-card.active,
+  .project-card.prev,
+  .project-card.next {
+    position: static;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    width: 90vw;
+    min-width: 220px;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .project-card,
+  .project-card.active,
+  .project-card.prev,
+  .project-card.next {
+    width: 290px;
+    min-height: 400px;
+  }
+}
+
+/* ----------------- Project Card Image Container ----------------- */
 .image-container {
   width: 100%;
-  flex: 2;
-  border-radius: 20px 20px 0 0;
-}
-
-.project-external-link {
-  border-radius: inherit;
+  height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
 }
 
 .project-image {
-  display: block;
-  border-radius: inherit;
-  max-height: 100%;
-  max-width: 100%;
-  height: 359px;
-  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 20px 20px 0 0;
 }
 
+.project-external-link:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* ----------------- Project Details ----------------- */
 .project-details-container {
+  padding: 20px 25px;
+  flex-grow: 1;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0 20px;
-}
-
-.project-yt-link {
-  font-weight: 600;
-  color: #4089ed;
+  justify-content: space-between;
 }
 
 .project-heading {
-  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a1a;
 }
 
 .project-details {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 28px;
-  color: #7d7987;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  flex-grow: 1;
 }
 
-/* For small width screens */
-@media only screen and (max-width: 640px) {
-  .project-cards-container {
-    padding: 20px;
+/* ----------------- Visit Button ----------------- */
+.visit-button {
+  margin-top: 20px;
+  align-self: flex-start;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.visit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.visit-button:active {
+  transform: scale(0.95);
+}
+
+/* ----------------- Carousel Arrows Below Center ----------------- */
+.carousel-arrows.bottom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0 0 0;
+  gap: 2.4rem;
+  z-index: 3;
+}
+
+.carousel-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  height: 56px;
+  background: rgba(30, 58, 138, 0.32);
+  background: linear-gradient(135deg, #6a11cb88 10%, #2575fc99 90%);
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 22px 0 rgba(37, 117, 252, 0.13), 0 0px 30px 0 #6a11cb33,
+    0 1.5px 8px #b7eaff18;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  font-size: 2.15rem;
+  color: #fff;
+  transition: background 0.22s cubic-bezier(0.4, 2, 0.3, 1),
+    box-shadow 0.22s cubic-bezier(0.4, 2, 0.3, 1),
+    transform 0.17s cubic-bezier(0.4, 2, 0.3, 1);
+  outline: none;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.carousel-arrow::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #91ffe055 45%, transparent 100%);
+  opacity: 0.42;
+  transition: opacity 0.3s;
+  z-index: -2;
+}
+
+.carousel-arrow:active {
+  transform: scale(0.93);
+}
+
+.carousel-arrow:focus {
+  box-shadow: 0 0 0 3.5px #9ddcffcc, 0 10px 38px 0 rgba(53, 144, 207, 0.12);
+}
+
+.carousel-arrow:hover {
+  background: linear-gradient(120deg, #2575fc 35%, #6a11cb 100%);
+  box-shadow: 0 0 0 8px #ffffff19, 0 8px 32px 0 #6a11cb44,
+    0 10px 40px 0 rgba(48, 207, 208, 0.09);
+  transform: scale(1.14) translateY(-3px);
+}
+
+.carousel-arrow svg {
+  transition: color 0.18s;
+  color: #ffffff;
+  filter: drop-shadow(0 0 4px #1ea5ff22);
+}
+
+/* ----------------- Responsive Styles for Controls ----------------- */
+@media only screen and (max-width: 800px) {
+  .carousel-arrows.bottom-center {
+    gap: 1.1rem;
+    margin-top: 1.3rem;
   }
-  .project-card {
-    width: 290px;
-    min-height: 500px;
+  .carousel-arrow {
+    height: 44px;
+    font-size: 1.45rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-arrows.bottom-center {
+    gap: 0.63rem;
+    margin-top: 0.73rem;
+  }
+  .carousel-arrow {
+    height: 36px;
+    font-size: 1.12rem;
   }
 }
