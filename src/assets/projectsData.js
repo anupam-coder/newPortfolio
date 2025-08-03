@@ -4,6 +4,7 @@ import flashType from "../assets/project-pics/flashtype.png";
 import klimate from "../assets/project-pics/weather-app.png";
 import BMS from "../assets/project-pics/BMS.png";
 import AIEmail from "../assets/project-pics/AI-email.png";
+import MachineCoding from "../assets/project-pics/machine-coding.png";
 
 export const projectsData = [
   {
@@ -47,5 +48,12 @@ export const projectsData = [
       "🚀 I built a free, open-source AI Email Assistant using React + OpenRouter API to help you write better emails effortlessly.✉️ From leave requests to persuasive pitches — choose a tone, generate text, and copy with a click (plus confetti!).",
     imageUrl: AIEmail,
     projectUrl: "https://ai-email-asistant.vercel.app/",
+  },
+  {
+    projectName: "Machine Coding Examples",
+    projectDescription:
+      "This repository contains various machine coding examples that demonstrate the implementation of UI components. It serves as a resource for developers looking to enhance their machine coding skills.",
+    imageUrl: MachineCoding,
+    projectUrl: "https://developer-practice.vercel.app/",
   },
 ];

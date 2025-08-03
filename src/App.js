@@ -12,6 +12,7 @@ import Experience from "./components/experience/experience";
 import { ParticlesBackground } from "./ParticlesBackground";
 import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
+import RotatingSkills from "./components/RotatingSkills/RotatingSkills";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <NavBar />
       <Banner />
       <About />
-      <Skills />
+      {/* <Skills /> */}
+      <RotatingSkills />
       <Experience />
       <Projects />
       <Blogs />

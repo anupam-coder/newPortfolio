@@ -74,11 +74,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={""}>
                   {/* <span className="tagline">{date}</span> */}
                   <h1>{`Hello World! I'm Anupam Patra ⚡`} </h1>
                   {/* <h4>

@@ -16,6 +16,7 @@ const Skills = () => (
     <Header
       heading="Skills"
       details="Here are some tools & technologies I excel at:"
+      className="skils_header"
     />
     <div className="skill-card-container">
       {skillList.map((skill) => (

@@ -36,6 +36,15 @@
   z-index: 2;
 }
 
+.skils_header {
+  color: aqua;
+  margin-bottom: 3rem;
+}
+
+.skils_header h1 {
+  color: #f2f3fa !important;
+}
+
 /* Glassy effect for Card */
 .skill.glassy-effect {
   display: flex;

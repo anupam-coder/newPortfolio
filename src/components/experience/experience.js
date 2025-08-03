@@ -5,6 +5,7 @@ import otLogo from "../../assets/company/ot_logo.png";
 import accentureLogo from "../../assets/company/accenture-logo.png";
 import wiproLogo from "../../assets/company/wipro-logo.png";
 import LBG from "../../assets/company/LBG.gif";
+import LTC from "../../assets/company/LTC.gif";
 
 const experiences = [
   {
@@ -12,7 +13,7 @@ const experiences = [
     role: "Senior Software Engineer",
     date: "June 2025 - Present",
     side: "right",
-    logo: LBG,
+    logo: LTC,
     description: `Current role at Lloyds Banking Group — shaping seamless, scalable banking experiences by building performant web solutions, optimizing systems, and collaborating across teams for robust deliveries.`,
   },
   {

@@ -1,0 +1,207 @@
+/* Container for the entire RotatingSkills section */
+.rotating-skills-section {
+  padding: 1rem 2vw 2rem 2vw;
+  background: linear-gradient(120deg, #221d3a 60%, #292a4a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 65vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Row wrapping all skill semicircle blocks */
+.rotating-skills-row {
+  display: flex;
+  gap: 2.5vw;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+/* Each semicircle skill block container */
+.rotating-skills-block {
+  flex: 1 1 280px;
+  max-width: 360px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* You can add some spacing and alignment for smaller widths */
+@media (max-width: 900px) {
+  .rotating-skills-row {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .rotating-skills-block {
+    min-width: 230px;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .rotating-skills-block {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Optional: To visually separate each block, add a subtle shadow or border */
+/* Uncomment if desired */
+.rotating-skills-block {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 3rem 0;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+/* --- Semicircle Arc Layout --- */
+.rotating-skills-arc-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rotating-skills-arc-wheel {
+  position: relative;
+  width: 214px;
+  height: 154px;
+  margin-bottom: 1.1rem;
+  margin-right: 40px;
+}
+
+.rotating-skills-arc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 214px;
+  height: 120px;
+  pointer-events: none;
+}
+
+/* Each icon on the arc */
+.rotating-skills-arc-icon {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 6px 28px #6a11cb25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.22s cubic-bezier(0.4, 2, 0.3, 1),
+    transform 0.19s cubic-bezier(0.4, 2, 0.3, 1), border 0.18s;
+  border: 2px solid #a8d7fd16;
+  opacity: 0.76;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.rotating-skills-arc-icon.active {
+  border: 2.5px solid #6a11cb;
+  background: #f5f4ff;
+  box-shadow: 0 10px 36px #2575fc44;
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 9;
+}
+.rotating-skills-arc-icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.rotating-skills-arc-icon:hover,
+.rotating-skills-arc-icon:focus {
+  box-shadow: 0 13px 36px #4169e646;
+  opacity: 1;
+}
+
+/* Central preview spotlight */
+.rotating-skills-arc-center {
+  position: absolute;
+  left: 66%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(136deg, #f0f3ff 70%, #e8f2ff 120%);
+  border-radius: 50%;
+  box-shadow: 0 6px 42px #2575fc21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+  animation: fadeIn 0.68s cubic-bezier(0.48, 1, 0.44, 1);
+}
+.rotating-skills-arc-center-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.rotating-skills-arc-center-name {
+  font-size: 0.92rem;
+  color: #263354;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.rotating-skills-arc-label {
+  font-size: 1.14rem;
+  font-weight: 600;
+  color: #6a11cb;
+  margin-top: 4.5rem;
+  letter-spacing: 0.07em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translate(-50%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+  .rotating-skills-arc-wheel,
+  .rotating-skills-arc {
+    width: 150px;
+  }
+}
+@media (max-width: 750px) {
+  .rotating-skills-arc-label {
+    font-size: 1.04rem;
+  }
+}
+@media (max-width: 500px) {
+  .rotating-skills-arc-wheel,
+  .rotating-skills-arc {
+    width: 110px;
+  }
+  .rotating-skills-arc-center {
+    width: 35px;
+    height: 35px;
+  }
+  .rotating-skills-arc-center-logo {
+    width: 17px;
+    height: 17px;
+  }
+}
