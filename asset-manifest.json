@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/newPortfolio/static/css/main.9960da7c.css",
-    "main.js": "/newPortfolio/static/js/main.c48600ed.js",
+    "main.css": "/newPortfolio/static/css/main.626b2366.css",
+    "main.js": "/newPortfolio/static/js/main.c753f8ba.js",
     "static/js/787.fb771931.chunk.js": "/newPortfolio/static/js/787.fb771931.chunk.js",
     "static/media/about_anime.gif": "/newPortfolio/static/media/about_anime.986764c2696118dcbe90.gif",
     "static/media/LBG.gif": "/newPortfolio/static/media/LBG.e5923cb8aac2d6c86a01.gif",
@@ -22,6 +22,7 @@
     "static/media/faz.png": "/newPortfolio/static/media/faz.8b8de435608c4a8a3085.png",
     "static/media/weather-app.png": "/newPortfolio/static/media/weather-app.b08760960f311602e932.png",
     "static/media/header-img.svg": "/newPortfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/machine-coding.png": "/newPortfolio/static/media/machine-coding.f72f87d8a454b25da087.png",
     "static/media/wipro-logo.png": "/newPortfolio/static/media/wipro-logo.bdbd3752d604bd076efe.png",
     "static/media/AI-email.png": "/newPortfolio/static/media/AI-email.b1b4d70c27aec1041f40.png",
     "static/media/CentraNo2-Bold.ttf": "/newPortfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -39,12 +40,12 @@
     "index.html": "/newPortfolio/index.html",
     "static/media/twitter.svg": "/newPortfolio/static/media/twitter.1170ec5150de467c091d2b544c028172.svg",
     "static/media/linkedin.svg": "/newPortfolio/static/media/linkedin.601a08b5febfbd1a7a33e809a8ce82af.svg",
-    "main.9960da7c.css.map": "/newPortfolio/static/css/main.9960da7c.css.map",
-    "main.c48600ed.js.map": "/newPortfolio/static/js/main.c48600ed.js.map",
+    "main.626b2366.css.map": "/newPortfolio/static/css/main.626b2366.css.map",
+    "main.c753f8ba.js.map": "/newPortfolio/static/js/main.c753f8ba.js.map",
     "787.fb771931.chunk.js.map": "/newPortfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9960da7c.css",
-    "static/js/main.c48600ed.js"
+    "static/css/main.626b2366.css",
+    "static/js/main.c753f8ba.js"
   ]
 }
